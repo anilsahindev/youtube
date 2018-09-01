@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <title>Document</title>
+    <style>
+    *{
+        width:100%;
+        margin-top:50px;
+    }
+    .header{
+        position: fixed;;
+        height:auto;
+        top:0;
+        color:#000;
+    }
+    .content{
+        background-color: teal;
+        height:600px;;
+    }
+    .footer{
+        background-color:tomato;
+        height:1000px;;
+    }
+    .nav-bg{
+        background:#000;
+        color:#fff;
+    }
+
+    </style>
+    <script>
+    $(window).on("scroll", function(){
+    var navHeight = $(".content").height();
+    console.log(navHeight);
+    if($(window).scrollTop() > navHeight )
+    {
+     $(".header").addClass("nav-bg");   
+    }
+    else{
+        $(".header").removeClass("nav-bg");
+    }
+
+
+
+    });
+    
+    </script>
+
+
+</head>
+<body>
+    <div class="header">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, numquam assumenda adipisci quod maiores error repudiandae nihil nulla? Enim ad veniam ea exercitationem molestias laudantium laboriosam ullam ducimus? Praesentium, alias.
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur blanditiis atque, ad vitae nisi nihil beatae magnam quasi asperiores reprehenderit, necessitatibus error dolorum nostrum assumenda fuga unde deserunt magni tenetur!
+
+    </div>
+    <div class="footer">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum voluptate vitae, a alias nihil quis nostrum nulla voluptatem, enim ullam, consequatur obcaecati. Ipsam commodi facere corporis a, repellat alias consequuntur.
+
+    </div>
+</body>
+</html>
