@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+.ilk-yazi {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+}
+.bg-resim {
+    background-image: url("https://i.picsum.photos/id/894/2000/300.jpg");
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+.kutu {
+    border: 5px solid red;
+    width: 200px;
+    height: 250px;
+}
+
+.kutu-2 {
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    margin: 10px 20px 40px 50px;
+    padding: 10px;
+}
+
+.kutu-2 input {
+    width: 100%;
+    padding: 20px;
+}
+
+.box-sizing {
+    box-sizing: border-box;
+}
+
+.content-sizing {
+    box-sizing: content-box;
+}
+
+.kutu-3 {
+    border: 1px solid blue;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.kutu-3 .baslik {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-shadow: -17px -19px 0 #000;
+}
+
+.kutu-3 .yazi {
+    line-height: 25px;
+    letter-spacing: 5px;
+    height: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.kutu-4, .kutu-5 {
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border: 3px solid green;
+    display: inline-block;
+    border-radius: 20px;
+}
+.position-kutu {
+    width: 250px;
+    height: 250px;
+    border: 3px solid green;
+    position: absolute;
+    background: chocolate;
+}
+.position-relative {
+    width: 550px;
+    height: 550px;
+    border: 3px solid green;
+    background: turquoise;
+    position: relative;
+    top: 50px;
+    z-index: 2;
+    box-shadow: 1px 1px 20px 17px #fdd;
+}
