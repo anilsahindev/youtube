@@ -1,0 +1,54 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 200px;
+    grid-gap: 30px;
+}
+
+.grid > div {
+    background: blue;
+    color: #fff
+}
+
+.grid > div:nth-child(even) {
+    background: green;
+}
+
+.template {
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas: "header header" "sidebar content" "footer footer";
+}
+
+.template > div {
+    color: #fff;
+}
+
+.header {
+    grid-area: header;
+    background: #C95555;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #AB0000;
+}
+
+.content {
+    grid-area: content;
+    background: #3A9B6D;
+}
+
+.footer {
+    grid-area: footer;
+    background: #98B817;
+}
+
+.auto-grid {
+    display: grid;
+    grid-auto-flow: row;
+    width: 500px;
+    height: 450px;
+    background: green;
+}
